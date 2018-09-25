@@ -31,7 +31,7 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import java.io.File
 
 def csvFileToJson(filePath: String): String = {
-  val inputCsvFile = new File(path)
+  val inputCsvFile = new File(filePath)
 
   // if the csv has header, use setUseHeader(true)
   val csvSchema = CsvSchema.builder().setUseHeader(true).build()

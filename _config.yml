@@ -5,7 +5,8 @@ description:
   Datum Brain's coding prowess.
 
 twitter_username: datumbrain
-github_username:  datumbrain
+github_username: datumbrain
+facebook_username: datumbrain
 rss: rss
 
 show_excerpts: false
@@ -16,7 +17,7 @@ minima:
 theme: minima
 
 disqus:
-  shortname: datumbrain  
+  shortname: datumbrain
 
 plugins:
  - jekyll-feed

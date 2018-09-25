@@ -8,6 +8,6 @@ twitter_username: datumbrain
 github_username:  datumbrain
 
 markdown: kramdown
-theme: jekyll-theme-minimal
+theme: minima
 plugins:
   - jekyll-feed

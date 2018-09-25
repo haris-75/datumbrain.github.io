@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello from Datum Brain
-author: Fahad
+author: Fahad Siddiqui
 ---
 
 We're excited to post tech articles.

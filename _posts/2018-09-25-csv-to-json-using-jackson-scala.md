@@ -2,11 +2,12 @@
 layout: post
 title: CSV to JSON Using Jackson (Scala/Java)
 author: Fahad Siddiqui
+date: "2018-09-25 17:02:00"
 ---
 
 To convert a file containing CSV into JSON format, there are a few classes in `com.fasterxml.jackson` package.
 
-Use maven dependency below
+Using maven dependency below
 
 ```xml
 <dependency>
@@ -37,7 +38,11 @@ def csvFileToJson(filePath: String): writeValueAsString = {
   val csvMapper = new CsvMapper()
 
   // java.util.Map[String, String] identifies they key values type in JSON
-  val readAll = csvMapper.readerFor(classOf[java.util.Map[String, String]]).`with`(csvSchema).readValues(inputCsvFile).readAll()
+  val readAll = csvMapper
+    .readerFor(classOf[java.util.Map[String, String]])
+    .`with`(csvSchema)
+    .readValues(inputCsvFile)
+    .readAll()
 
   val mapper = new ObjectMapper()
 
@@ -45,3 +50,6 @@ def csvFileToJson(filePath: String): writeValueAsString = {
   mapper.writerWithDefaultPrettyPrinter().writeValueAsString(readAll)
 }
 ```
+
+This returns JSON as a string. So, if you want to convert that into a case class
+in Scala, you can try `play-json`.

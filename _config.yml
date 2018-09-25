@@ -15,6 +15,9 @@ minima:
 
 theme: minima
 
+disqus:
+  shortname: datumbrain  
+
 plugins:
  - jekyll-feed
  - jekyll-seo-tag

@@ -1,4 +1,4 @@
-# HOW-TO-POST MANUAL
+# How to Post
 
 Get the latest from master
 ```
@@ -11,13 +11,17 @@ Create a new branch with the following format.
 post/whatever-post-title-is
 ```
 
-## Creating new post
+## Creating New Post
 
-New posts go in <code>_posts</code> directory. Every single post is actually a file of the format<br><br> <code>YYYY-MM-DD-whatever-post-title.md</code>
+New posts go in `_posts` directory. Every single post is actually a file of the format<br><br>
 
-Write your post in markdown syntax.
+```
+YYYY-MM-DD-whatever-post-title.md
+```
 
-## Testing locally
+Write your post in markdown syntax
+
+## Testing Locally
 
 To test what you have created locally. Run <br>
 
@@ -25,12 +29,12 @@ To test what you have created locally. Run <br>
 bundle exec jekyll serve
 ```
 
-The application is accessible at <code>http://localhost:4000/</code>
+The application is accessible at `http://localhost:4000/`
 
 ## Publish
 
 Once everything went as expected, push your branch and create a pull request. Feel free to add a reviewer.
 
-## More ...
+## More
 
-To learn more what goes in a post. Please refer to **[jekyll docs](https://jekyllrb.com/docs/)**
+To learn more what goes in a post. Please refer to [jekyll docs](https://jekyllrb.com/docs/)

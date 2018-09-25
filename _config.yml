@@ -1,13 +1,20 @@
 title: Datum Brain's Blog
+author: Datum Brain
 email: info@datumbrain.com
-description: >-
-  Datum Brain's official blog.
-baseurl: ""
-url: "https://datumbrain.com"
+description:
+  Datum Brain's coding prowess.
+
 twitter_username: datumbrain
 github_username:  datumbrain
+rss: rss
 
-markdown: kramdown
+show_excerpts: false
+
+minima:
+  date_format: "%b %-d, %Y"
+
 theme: minima
+
 plugins:
-  - jekyll-feed
+ - jekyll-feed
+ - jekyll-seo-tag

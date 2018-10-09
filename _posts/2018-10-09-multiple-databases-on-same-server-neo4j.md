@@ -2,11 +2,11 @@
 layout: post
 title: Multiple (Unique) Graph Databases On Same Server (Neo4j)
 author: Saad Ali
-date: "2018-10-08 17:52:00"
+date: "2018-10-08 09:53:00"
 ---
-> Prerequisites for this article:
-1- General Understanding of Graph Databases
-2- General Understanding of Neo4j
+> Prerequisites for this article:<br>
+>1- General Understanding of Graph Databases<br>
+>2- General Understanding of Neo4j<br>
 
 While working on a product at [Datum Brain](https://www.datumbrain.com/) we reached at an interesting situation.
 
@@ -19,9 +19,9 @@ Well, what caused the problem was, if there were two nodes with same data (which
 ```
 CREATE (Person:p {title:'Jon Doe'})
 ```
-Neo4j created two nodes like this <br>
-![][/post-assests/neo4j_bolt.png]
-<br>
+Neo4j created two nodes like this <br><br>
+![](/post-assests/neo4j_bolt.png)
+<br><br>
 It didn't (obviously) met our business requirements as even though the nodes had same data they might not necessarily have the same relations with other nodes right? And how would we retrieve a certain node and its related nodes if we don't know the `id` assigned to it by `Neo4j`?
 
 ### Solution

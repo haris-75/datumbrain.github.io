@@ -27,10 +27,10 @@ It didn't (obviously) met our business requirements as even though the nodes had
 ### Solution
 To tackle this problem, what we did was, we added another property to the node,like this
 ```
-CREATE (Person:p {title:'Jon Doe',id:'1'})
+CREATE (Person:p {title:'Jon Doe', ASSIGNED_ID:'1'})
 ```
 That property `id` is unique and is a part of every node belonging to a certain database. Now when we wanted to retrieve a certain database/graph, what we did was just add a condition in `where` clause to retrieve only the nodes belonging to a certain database i.e. having `id` equal to a unique value we assigned to a certain database, something like this
 ```
-MATCH (e: Person)-[]->(l: Location) WHERE Id = '$Id' AND l.Id = '$Id' RETURN (e)-[]->(l);
+MATCH (e: Person)-[]->(l: Location) WHERE ASSIGNED_ID = '$Id' AND l.ASSIGNED_ID = '$Id' RETURN (e)-[]->(l);
 ```
 Now even if some nodes had same data they would never have same `Id` thus making or not making it a part of a certain database and giving us power to create multiple independent instances of it in different databases on same server. Cool isn't it?

@@ -69,7 +69,7 @@ val jsvalue2 = Json.parse(
 To patch the first and update the text (dynamically) by using `gneih`'s `JsonPatch`, we just have to
 
 ```
-val patch = JsonPatch(jsvalue1, jsvalue2, remember=false)
+val patch = JsonDiff.diff(jsvalue1, jsvalue2, remember=false)
 ```
 
 and then later on apply the patch to `jsvalue1`,
@@ -79,6 +79,9 @@ and then later on apply the patch to `jsvalue1`,
 patch(jsvalue1)
 ```
 
+> Note: You can also convert the `patch` to `JsValue` if you need to serialize it and use somewhere.
+> To do that, just `Json.parse(patch.toString)` and you'll get the `JsValue`
+
 The new updated `json` is (`JsValue` returned from `patch(jsvalue1)`)
 
 ```
@@ -87,5 +90,3 @@ The new updated `json` is (`JsValue` returned from `patch(jsvalue1)`)
   "text": "Revised, hey what's up?"
 }
 ```
-
-Thanks to [https://github.com/gnieh/diffson](https://github.com/gnieh/diffson)!

@@ -38,7 +38,7 @@ So for the following db details
 dbuser : `gunther`
 dbpassword: `centralperk`
 
-mongodb://gunther:centralperk@de2435678.mlab.com:47178/todoapp`
+`mongodb://gunther:centralperk@de2435678.mlab.com:47178/todoapp`
 
 Now you have connection string ready to use in your code
 

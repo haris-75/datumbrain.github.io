@@ -12,7 +12,7 @@ Thanks to Gnieh Diffson @ [https://github.com/gnieh/diffson](https://github.com/
 ## Dependencies
 
 ### SBT
-```
+```sbt
 libraryDependencies += "org.gnieh" %% f"diffson-$LIBRARY" % "3.0.0"
 ```
 
@@ -24,12 +24,12 @@ Where `LIBRARY` can be
 
 In my case, as I work most of the time with `SBT`
 
-```
+```sbt
 libraryDependencies += "org.gnieh" %% "diffson-play-json" % "3.0.0"
 ```
 
 ### Maven
-```
+```xml
 <dependency>
   <groupId>org.gnieh</groupId>
   <artifactId>diffson-${json.lib}_${scala.version}</artifactId>
@@ -43,12 +43,12 @@ libraryDependencies += "org.gnieh" %% "diffson-play-json" % "3.0.0"
 ## Code
 
 Here are the imports for the code
-```
+```scala
 import play.api.libs.json.{JsValue, Json}
 ```
 
 Here lies the first two `JsValue`s
-```
+```scala
 val jsvalue1 = Json.parse(
   """
     |{
@@ -68,13 +68,13 @@ val jsvalue2 = Json.parse(
 
 To patch the first and update the text (dynamically) by using `gneih`'s `JsonPatch`, we just have to
 
-```
+```scala
 val patch = JsonDiff.diff(jsvalue1, jsvalue2, remember=false)
 ```
 
 and then later on apply the patch to `jsvalue1`,
 
-```
+```scala
 // patch.apply()
 patch(jsvalue1)
 ```
@@ -84,7 +84,7 @@ patch(jsvalue1)
 
 The new updated `json` is (`JsValue` returned from `patch(jsvalue1)`)
 
-```
+```json
 {
   "id": 3,
   "text": "Revised, hey what's up?"

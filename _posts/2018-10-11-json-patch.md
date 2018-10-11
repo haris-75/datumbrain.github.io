@@ -5,6 +5,8 @@ author: Fahad Siddiqui
 date: "2018-10-11 15:51:00"
 ---
 
+![](/assets/posts/programming.png)
+
 Recently I've found a cleaner way to patch (update) your Json while working with Microservices framework `Lagom`.<br>
 
 Thanks to Gnieh Diffson @ [https://github.com/gnieh/diffson](https://github.com/gnieh/diffson) for creating this wonderful library.

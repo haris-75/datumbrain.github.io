@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MongoDb on Heroku Without Giving Verifying Payment Information
+title: MongoDB on Heroku Without Giving Verifying Payment Information
 author: Nauman Zafar Chaudhry
 date: "2018-10-12 13:00:00"
 ---
@@ -14,12 +14,16 @@ API uses `MongoDB` via mongoose ORM. On Heroku you can setup a MongoDB database 
 > Heroku requires your payment information for some addons even for sandbox account. Which you don't want to give when using a sandbox account or just learning something just like me.
 
 #### Solution
+
 > The solution in simple words is, set up a mongodb database but not using heroku.
 
 #### How? `mlab.com` to Rescue
+
 As you know all you need to connect to a db is connection string. For mongo you have connection string something like this.
 
-`mongodb://<user>:<password>@<hostname>:<port>/<database>`
+```
+mongodb://<user>:<password>@<hostname>:<port>/<database>
+```
 
 Head over to [https://mlab.com/](https://mlab.com/) and register a sandbox account
 
@@ -32,24 +36,27 @@ Head over to [https://mlab.com/](https://mlab.com/) and register a sandbox accou
 In this page under your database name you will see a connection string mentioned with the name `MongoDB URI` which looks something like this. Yours will be different.
 
 ```
-mongodb://<dbuser>:<dbpassword>@de243578.mlab.com:47178/todoapp```
+mongodb://<dbuser>:<dbpassword>@de243578.mlab.com:47178/todoapp
+```
 
 So for the following db details
 
 dbuser | dbpassword
---- | --- | ---
+--- | ---
 gunther | centralperk
 
 
 ```
-mongodb://gunther:centralperk@de2435678.mlab.com:47178/todoapp```
+mongodb://gunther:centralperk@de2435678.mlab.com:47178/todoapp
+```
 
 Now you have connection string ready to use in your code
 
 As a last step, set this connection string to a `Heroku` environment variable so your code on heroku knows this connection string. `cd` into your project directory.
 
 ```
-heroku config:set MONGOLAB_URI = "mongodb://gunther:centralperk@de243578.mlab.com:47178/todoapp"```
+heroku config:set MONGOLAB_URI = "mongodb://gunther:centralperk@de243578.mlab.com:47178/todoapp"
+```
 
 You can access this connection string via `process.env.MONGOLAB_URI`.
 

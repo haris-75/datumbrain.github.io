@@ -5,6 +5,8 @@ author: Nauman Zafar Chaudhry
 date: "2018-10-12 13:00:00"
 ---
 
+![MongoDB-on-heroku](/post-assests/nodejs-mongodb-heroku.png)
+
 Started learning node and have been writing a simple API using `express` for practice. After configuring some routes I wanted to get the API live and tried `heroku` for that.
 API uses `MongoDB` via mongoose ORM. On Heroku you can setup a MongoDB database using addons like `mongolab` etc.
 

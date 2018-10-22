@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Updating (Patching) Json Dynamically in Scala
+title: Updating (Patching) JSON Dynamically in Scala
 author: Fahad Siddiqui
 date: "2018-10-11 15:51:00"
 ---

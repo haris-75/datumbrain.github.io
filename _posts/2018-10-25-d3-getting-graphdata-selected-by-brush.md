@@ -7,7 +7,7 @@ date: "2018-10-25 16:30:00"
 
 <img src="/assets/d3js-icon.svg" style="margin-left:40%;width:150px;"/>
 
-`D3.js` is a powerful javascript library to make your information visualization journey a piece of cake (if you like cakes. Infact, I just ate some a couple hours ago). It has an active community(talking about D3 and not cakes) as well in case you get stuck somewhere.
+[D3.js](https://d3js.org/) is a powerful javascript library to make your information visualization journey a piece of cake (if you like cakes. Infact, I just ate some a couple hours ago). It has an active community(talking about D3 and not cakes) as well in case you get stuck somewhere.
 
 #### Agenda?
 > This article covers getting the data under a brush selection on a canvas using D3 V4.

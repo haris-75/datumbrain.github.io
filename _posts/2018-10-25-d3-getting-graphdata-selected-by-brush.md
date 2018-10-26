@@ -7,25 +7,26 @@ date: "2018-10-25 16:30:00"
 
 <img src="/assets/d3js-icon.svg" style="margin-left:40%;width:150px;"/>
 
-[D3.js](https://d3js.org/) is a powerful javascript library to make your information visualization journey a piece of cake (if you like cakes. Infact, I just ate some a couple hours ago). It has an active community(talking about D3 and not cakes) as well in case you get stuck somewhere.
+[D3.js](https://d3js.org/) is a powerful JavaScript library to make your information visualization journey a piece of cake (if you like cakes. Infact, I just ate some a couple hours ago). It has an active community(talking about D3 and not cakes) as well in case you get stuck somewhere.
 
 #### Agenda
-> This article covers getting the data under a brush selection on a canvas using D3 V4.
+This article covers getting the data under a brush selection on a canvas using D3 V4.
 
 #### Pre-requisites
 
-> The article presumes, you have a basic understanding of Javascript, JSON and HTML and know how to include a library (like d3.js) and use it.
+The article presumes, you have a basic understanding of JavaScript, JSON and HTML and know how to include a library (like d3.js) and use it.
 
 #### GraphJSON
-> Whereever in the code below you see a `graph`. It is a `GraphJSON` object. You can learn more about the format of this object [GraphJSON Reference](https://github.com/GraphAlchemist/GraphJSON)
+
+Whereever in the code below you see a `graph`. It is a `GraphJSON` object. You can learn more about the format of this object [GraphJSON Reference](https://github.com/GraphAlchemist/GraphJSON)
 
 #### What's with this brush?
 
-> Brush is actually a cross hair type UI which lets you drag and select an area on a canvas (Something like you have seen on while using MS Paint application to draw a rectangle).
+Brush is actually a cross hair type UI which lets you drag and select an area on a canvas (something like you might have seen while using MS Paint application).
 
 #### Let's dive in
 
-  In D3 V4, you can create a brush like this.
+In D3 V4, you can create a brush like this.
 
 1. #####  Creating a Brush
 ```javascript
@@ -43,8 +44,8 @@ let brush = d3.brush()
     So we want the data. Right? Let's plug some logic when brush ends selecting the canvas area.
 
     ```javascript
-    //let svg = $("#svg-container").append("svg").attr("viewBox", "0 0 " + width + " " + height);
-    // svg is the container of your svg you had created.
+    let svg = $("#svg-container").append("svg").attr("viewBox", "0 0 " + width + " " + height);
+
     svg.append("g")
       .attr('class', 'brush')
       .call(brush);
@@ -53,7 +54,7 @@ let brush = d3.brush()
   ```
   Our point of interest in this is `brush.on("end", brushend)` call. This is where we tell d3 that when our brush ends brushing(selecting the area) call the method `brushend`.
 
-3. ##### Let's write up brushend method
+3. ##### Let's write brushend method
 
     Our `brushend` method is going to do a few things.
 

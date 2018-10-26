@@ -58,9 +58,9 @@ let brush = d3.brush()
 
     Our `brushend` method is going to do a few things.
 
-    Getting the selection of the d3 brush using `d3.event.selection`.
+    1.  Getting the selection of the d3 brush using `d3.event.selection`.
 
-    If we map a canvas to a co-ordinate system we can easily see that If we get the x1, y1, x2, y2 co-ordinates of a 2D space we can get the data under it.
+    2.  If we map a canvas to a co-ordinate system we can easily see that If we get the x1, y1, x2, y2 co-ordinates of a 2D space we can get the data under it.
 
     ```javascript
     function brushend()

@@ -21,15 +21,15 @@ The article presumes, you have a basic understanding of JavaScript, JSON and HTM
 
 Whereever in the code below you see a `graph`. It is a `GraphJSON` object. You can learn more about the format of this object [GraphJSON Reference](https://github.com/GraphAlchemist/GraphJSON)
 
-### What is a Brush?
+## What is a Brush?
 
 Brush is actually a cross hair type UI which lets you drag and select an area on a canvas (something like you might have seen while using MS Paint application).
 
-### Let's Dive In
+## Let's Dive In
 
 In D3 V4, you can create a brush like this.
 
-#### Creating a Brush
+### Creating a Brush
 ```javascript
 let brush = d3.brush()
 	.extent([[0, 0], [width, height]]);
@@ -40,7 +40,7 @@ There are two things to note in above code snippet.
 
 `extent()` - extent defines the area this brush can cover. For this case it covers the whole canvas area provided width & height are calculated width & height of the canvas container.
 
-#### Brush End Event
+### Brush "end" Event
 So we want the data. Right? Let's plug some logic when brush ends selecting the canvas area.
 
 ```javascript
@@ -58,9 +58,7 @@ brush.on("end", brushend);
 
 Our point of interest in this is `brush.on("end", brushend)` call. This is where we tell d3 that when our brush ends brushing(selecting the area) call the method `brushend`.
 
-  
-
-#### Let's Write Brushend Method
+### Let's Write `brushend()` Method
 
 Our `brushend` method is going to do a few things.
 

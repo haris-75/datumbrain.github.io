@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MongoDB on Heroku Without Giving Verifying Payment Information
+title: MongoDB on Heroku Without Giving Payment Information
 author: Nauman Zafar Chaudhry
 date: "2018-10-12 13:00:00"
 ---
@@ -10,16 +10,14 @@ date: "2018-10-12 13:00:00"
 Started learning node and have been writing a simple API using `express` for practice. After configuring some routes I wanted to get the API live and tried `heroku` for that.
 API uses `MongoDB` via mongoose ORM. On Heroku you can setup a MongoDB database using addons like `mongolab` etc.
 
-
-
-#### Problem
+## Problem
 > Heroku requires your payment information for some addons even for sandbox account. Which you don't want to give when using a sandbox account or just learning something just like me.
 
-#### Solution
+## Solution
 
 > The solution in simple words is, set up a mongodb database but not using heroku.
 
-#### How? `mlab.com` to Rescue
+## How? `mlab.com` to Rescue
 
 As you know all you need to connect to a db is connection string. For mongo you have connection string something like this.
 
@@ -29,7 +27,7 @@ mongodb://<user>:<password>@<hostname>:<port>/<database>
 
 Head over to [https://mlab.com/](https://mlab.com/) and register a sandbox account
 
-##### Steps
+### Steps
 1. Register and verify your account.
 2. Select the sandbox plan.
 3. Create the database.

@@ -35,7 +35,7 @@ And at the end, just to make sure we find the first out of many filtered strings
 
 So this will give you a UUID, always guaranteed random by your OS.
 
-You can store in some variable using legacy bourne shell backticks ` ```` ` or `$()` operator.
+You can store in some variable using legacy bourne shell backticks ` `` ` or `$()` operator.
 
 ```bash
 $ NEW_UUID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)

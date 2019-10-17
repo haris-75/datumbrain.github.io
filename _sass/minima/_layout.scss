@@ -58,7 +58,8 @@
   }
 
   .page-link {
-    text-transform: uppercase;
+    //text-transform: uppercase;
+    font-style: italic;
     color: $text-color;
     line-height: $base-line-height;
 

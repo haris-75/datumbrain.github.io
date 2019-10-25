@@ -6,6 +6,8 @@ authorURL: https://github.com/fahadsiddiqui
 date: "2019-10-26 01:22:00"
 ---
 
+![](/assets/posts/echo-with-box/0.png)
+
 I recently started refactoring one of my project's deployment scripts. I came across an enhancement where I wanted to make my strings boxed.
 
 Like,

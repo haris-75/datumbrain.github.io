@@ -4,11 +4,9 @@ title: About
 permalink: /about/
 ---
 
-## About
-
 Datum Brain is a cutting edge endeavor that specifically caters to the latest technologies. We have centered our skills and done extensive work in the following three disciplines; Big Data, Machine Learning and Artificial Intelligence.
 
-Our extensive R&D along with hands on expereince on the latests innovations grants you a solution that is perfectly fit for your use case.
+Our extensive research & development along with hands on expereince on the latests innovations grants you a solution that is perfectly fit for your use case.
 
 ## Why choose us?
 
@@ -31,6 +29,12 @@ Get the stats that matter to you most.
 ### Cloud Deployment
 Deploy on secure and fast cloud servers.
 
-Reach out to us with any query, we will get back to you almost immediately.
+________________
+<br/>
 
-contact [AT] datumbrain [DOT] com
+Reach out to us with any query, we will get back to you almost immediately.<br/>
+Contact us [here](mailto:contact@datumbrain.com).
+
+
+Interested in writing for us? <br/>
+Apply as a _Content Writer_ [here](mailto:careers@datumbrain.com).

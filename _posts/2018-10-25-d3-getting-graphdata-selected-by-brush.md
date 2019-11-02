@@ -2,7 +2,7 @@
 layout: post
 title: D3.js - Getting Data Under Brush Selection
 author: Nauman Zafar Chaudhry
-authorURL: https://github.com/naumanzchaudhry
+authorUrl: https://github.com/naumanzchaudhry
 date: "2018-10-25 16:30:00"
 ---
 

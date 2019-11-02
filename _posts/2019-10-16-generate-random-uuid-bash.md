@@ -2,7 +2,7 @@
 layout: post
 title: Generate Random UUID Using Shell
 author: Fahad Siddiqui
-authorURL: https://github.com/fahadsiddiqui
+authorUrl: https://github.com/fahadsiddiqui
 date: "2019-10-16 23:42:00"
 ---
 

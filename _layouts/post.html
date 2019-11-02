@@ -12,8 +12,8 @@ layout: default
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          {%- if page.authorURL -%}
-              <a target="_blank" href="{{ page.authorURL | absolute_url }}"> {{ page.author }} </a>
+          {%- if page.authorUrl -%}
+              <a target="_blank" href="{{ page.authorUrl | absolute_url }}"> {{ page.author }} </a>
           {%- else -%}
             <a target="_blank" href="{{ "https://www.datumbrain.com/" | absolute_url }}"> {{ page.author }} </a>
           </span>

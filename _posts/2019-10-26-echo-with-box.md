@@ -2,7 +2,7 @@
 layout: post
 title: Echo with Box
 author: Fahad Siddiqui
-authorURL: https://github.com/fahadsiddiqui
+authorUrl: https://github.com/fahadsiddiqui
 date: "2019-10-26 01:22:00"
 ---
 

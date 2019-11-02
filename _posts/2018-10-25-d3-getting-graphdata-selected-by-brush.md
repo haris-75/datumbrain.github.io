@@ -6,7 +6,6 @@ authorUrl: https://github.com/naumanzchaudhry
 date: "2018-10-25 16:30:00"
 ---
 
-
 [D3.js](https://d3js.org/) is a powerful JavaScript library to make your information visualization journey a piece of cake (if you like cakes -- Infact, I just ate some a couple hours ago). It has an active community (talking about D3 and not cakes) as well in case you get stuck somewhere.
 
 ## Agenda

@@ -10,9 +10,9 @@ It's simple. Let's dive into the code.
 
 ```scala
 import java.util.Currency
-import scala.collection.JavaConversions.asScalaSet
+import scala.collection.JavaConverters.asScalaSetConverter
 
-val currencies = Currency.getAvailableCurrencies.toSet
+val currencies = Currency.getAvailableCurrencies.asScala
 
 case class CurrencyInfo(code: String, displayName: String, 
   defaultFractionDigits: Long, numericCode: Long, symbol: String)
